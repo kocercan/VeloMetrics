@@ -1,0 +1,7 @@
+opencv-python
+moviepy
+imageio-ffmpeg
+numpy
+gpxpy
+geopy
+tqdm
