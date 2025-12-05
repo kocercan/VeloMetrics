@@ -73,8 +73,8 @@ ZAMAN_OFFSET_SANIYE = 430  # saniye / seconds
 🧪 Test için kısa video işle / Process short video for testing
 """
 DEMO_MODU = True                # True = test modu / True = test mode
-DEMO_MODE_SECONDS = 2          # Kaç saniye işle / How many seconds to process
-DEMO_START_SECONDS = 120        # Hangi saniyeden başla / Which second to start from
+DEMO_MODE_SECONDS = 30          # Kaç saniye işle / How many seconds to process
+DEMO_START_SECONDS = 0        # Hangi saniyeden başla / Which second to start from
 
 # ==================== 5. WIDGET AÇMA/KAPAMA (ÖNEMLİ!) ====================
 # ==================== 5. WIDGET ENABLE/DISABLE (IMPORTANT!) ====================
