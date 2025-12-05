@@ -42,7 +42,7 @@ CIKTI_DOSYASI = f"{base_output_name}_{timestamp}.mp4"  # Çıkış dosyası / Ou
 Mevcut temaları görmek için: python -c "from themes import list_themes; list_themes()"
 To see available themes: python -c "from themes import list_themes; list_themes()"
 """
-SELECTED_THEME = 'sport'  # Tema adını buraya yaz / Write theme name here
+SELECTED_THEME = 'classic'  # Tema adını buraya yaz / Write theme name here
 
 # Seçilen temayı yükle / Load selected theme
 current_theme = get_theme(SELECTED_THEME)
