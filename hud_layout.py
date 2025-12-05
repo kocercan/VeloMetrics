@@ -187,11 +187,11 @@ def render_unified_hud(frame, data, data_handler, t):
     
     if WIDGETS_ENABLED.get('speed'):
         right_widgets.append(('speed', data['speed']))
-    if WIDGETS_ENABLED.get('heart_rate'):
+    if WIDGETS_ENABLED.get('heart_rate') and data_handler.has_data_type('hr'):
         right_widgets.append(('heart_rate', data.get('hr')))
     if WIDGETS_ENABLED.get('power'):
         right_widgets.append(('power', data.get('power')))
-    if WIDGETS_ENABLED.get('cadence'):
+    if WIDGETS_ENABLED.get('cadence') and data_handler.has_data_type('cad'):
         right_widgets.append(('cadence', data.get('cad')))
     
     # Draw right widgets (max 4)
@@ -201,13 +201,13 @@ def render_unified_hud(frame, data, data_handler, t):
         if widget_type == 'speed':
             draw_panel_v2(hud, render_W - pad - bw, widget_y, bw, bh, "SPEED",
                           value, "speed", draw_speed_icon, COLORS['speed'])
-        elif widget_type == 'heart_rate' and value is not None:
+        elif widget_type == 'heart_rate':
             draw_heart_panel(hud, render_W - pad - bw, widget_y, bw, bh, value, beat_phase)
-        elif widget_type == 'power' and value is not None:
+        elif widget_type == 'power':
             draw_panel_v2(hud, render_W - pad - bw, widget_y, bw, bh,
                           "POWER", value, "power",
                           draw_power_icon, COLORS['power'])
-        elif widget_type == 'cadence' and value is not None:
+        elif widget_type == 'cadence':
             draw_panel_v2(hud, render_W - pad - bw, widget_y, bw, bh,
                           "CADENCE", value, "cadence",
                           draw_cadence_icon, COLORS['cadence'])

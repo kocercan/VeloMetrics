@@ -421,6 +421,22 @@ class DataHandler:
             'max': max(ele_values) if ele_values else 0,
         }
     
+    def has_data_type(self, data_type):
+        """
+        GPX dosyasında belirli bir veri tipinin var olup olmadığını kontrol et.
+        
+        Args:
+            data_type (str): Kontrol edilecek veri tipi ('hr', 'cad')
+        
+        Returns:
+            bool: Veri tipi GPX'te varsa True
+        """
+        if data_type == 'hr':
+            return any(point.get('hr') is not None for point in self.points)
+        elif data_type == 'cad':
+            return any(point.get('cad') is not None for point in self.points)
+        return False
+    
     def _smooth_power(self, raw_power):
         """
         Güç değerini smooth et (moving average).
