@@ -8,8 +8,7 @@ Transform your cycling videos into professional vlogs with GPS data overlay, hea
 
 ## 📹 Preview
 
-https://imgur.com/a/1vda6qv
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/1vda6qv" data-context="false" ><a href="//imgur.com/a/1vda6qv"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![Proje Demosu GIF'i](ride.gif)
 
 ---
 
